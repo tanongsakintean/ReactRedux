@@ -10,7 +10,6 @@ export const mangePosts = createSlice({
   reducers: {
     addPost: (state, action) => {
       return {
-        ...state,
         post: [
           ...state.post,
           { title: action.payload.Title, content: action.payload.Content },
